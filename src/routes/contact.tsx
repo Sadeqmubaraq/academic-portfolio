@@ -55,9 +55,19 @@ function validate(values: FormState): Errors {
 }
 
 const contactInfo = [
-  { icon: Mail, label: "Email", value: "sadeqmubaraqowolabi@gmail.com", href: "mailto:sadeqmubaraqowolabi@gmail.com" },
+  {
+    icon: Mail,
+    label: "Email",
+    value: "sadeqmubaraqowolabi@gmail.com",
+    href: "mailto:sadeqmubaraqowolabi@gmail.com",
+  },
   { icon: Phone, label: "Phone", value: "08129442528", href: "tel:08129442528" },
-  { icon: Github, label: "GitHub", value: "github.com/Sadeqmubaraq", href: "https://github.com/Sadeqmubaraq" },
+  {
+    icon: Github,
+    label: "GitHub",
+    value: "github.com/Sadeqmubaraq",
+    href: "https://github.com/Sadeqmubaraq",
+  },
   { icon: MapPin, label: "University", value: "MIVA Open University", href: undefined },
 ];
 
@@ -94,8 +104,7 @@ function Contact() {
         <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
           <h1 className="text-3xl font-extrabold sm:text-4xl">Contact Me</h1>
           <p className="mt-3 max-w-2xl text-primary-foreground/80">
-            Have a question or opportunity? Send me a message and I'll get back
-            to you.
+            Have a question or opportunity? Send me a message and I'll get back to you.
           </p>
         </div>
       </section>
@@ -105,19 +114,26 @@ function Contact() {
         <div>
           <h2 className="text-xl font-bold">Get in touch</h2>
           <p className="mt-2 text-sm text-muted-foreground">
-            I'm always open to collaboration, internships, and learning
-            opportunities.
+            I'm always open to collaboration, internships, and learning opportunities.
           </p>
           <ul className="mt-6 space-y-4">
             {contactInfo.map(({ icon: Icon, label, value, href }) => (
-              <li key={label} className="flex items-center gap-4 rounded-2xl border border-border bg-card p-4 shadow-soft">
+              <li
+                key={label}
+                className="flex items-center gap-4 rounded-2xl border border-border bg-card p-4 shadow-soft"
+              >
                 <span className="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-secondary text-primary">
                   <Icon className="h-5 w-5" />
                 </span>
                 <div className="min-w-0">
                   <p className="text-xs uppercase tracking-wider text-muted-foreground">{label}</p>
                   {href ? (
-                    <a href={href} target={href.startsWith("http") ? "_blank" : undefined} rel="noreferrer" className="truncate text-sm font-medium transition-colors hover:text-accent">
+                    <a
+                      href={href}
+                      target={href.startsWith("http") ? "_blank" : undefined}
+                      rel="noreferrer"
+                      className="truncate text-sm font-medium transition-colors hover:text-accent"
+                    >
                       {value}
                     </a>
                   ) : (
@@ -139,7 +155,9 @@ function Contact() {
           )}
           <form onSubmit={handleSubmit} noValidate className="space-y-5">
             <div>
-              <label htmlFor="name" className="mb-1.5 block text-sm font-medium">Name</label>
+              <label htmlFor="name" className="mb-1.5 block text-sm font-medium">
+                Name
+              </label>
               <input
                 id="name"
                 type="text"
@@ -152,7 +170,9 @@ function Contact() {
             </div>
 
             <div>
-              <label htmlFor="email" className="mb-1.5 block text-sm font-medium">Email Address</label>
+              <label htmlFor="email" className="mb-1.5 block text-sm font-medium">
+                Email Address
+              </label>
               <input
                 id="email"
                 type="email"
@@ -165,7 +185,9 @@ function Contact() {
             </div>
 
             <div>
-              <label htmlFor="phone" className="mb-1.5 block text-sm font-medium">Phone Number</label>
+              <label htmlFor="phone" className="mb-1.5 block text-sm font-medium">
+                Phone Number
+              </label>
               <input
                 id="phone"
                 type="tel"
@@ -179,7 +201,9 @@ function Contact() {
             </div>
 
             <div>
-              <label htmlFor="message" className="mb-1.5 block text-sm font-medium">Message</label>
+              <label htmlFor="message" className="mb-1.5 block text-sm font-medium">
+                Message
+              </label>
               <textarea
                 id="message"
                 rows={5}
@@ -188,7 +212,9 @@ function Contact() {
                 className={`${fieldClasses("message")} resize-y`}
                 placeholder="Write your message here..."
               />
-              {errors.message && <p className="mt-1.5 text-xs text-destructive">{errors.message}</p>}
+              {errors.message && (
+                <p className="mt-1.5 text-xs text-destructive">{errors.message}</p>
+              )}
             </div>
 
             <button

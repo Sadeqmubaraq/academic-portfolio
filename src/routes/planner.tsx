@@ -67,9 +67,7 @@ function Planner() {
   }
 
   function toggleTask(id: string) {
-    setTasks((prev) =>
-      prev.map((t) => (t.id === id ? { ...t, completed: !t.completed } : t)),
-    );
+    setTasks((prev) => prev.map((t) => (t.id === id ? { ...t, completed: !t.completed } : t)));
   }
 
   function deleteTask(id: string) {
@@ -98,8 +96,8 @@ function Planner() {
         <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
           <h1 className="text-3xl font-extrabold sm:text-4xl">Academic Planner</h1>
           <p className="mt-3 max-w-2xl text-primary-foreground/80">
-            Organise your academic life. Add tasks, mark them as completed, and
-            remove them when you're done. Your tasks are saved on this device.
+            Organise your academic life. Add tasks, mark them as completed, and remove them when
+            you're done. Your tasks are saved on this device.
           </p>
         </div>
       </section>

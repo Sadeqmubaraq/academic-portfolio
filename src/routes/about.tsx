@@ -51,8 +51,8 @@ function PageHeader() {
       <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
         <h1 className="text-3xl font-extrabold sm:text-4xl">About Me</h1>
         <p className="mt-3 max-w-2xl text-primary-foreground/80">
-          A closer look at my education, goals, skills, and the things I love
-          doing outside the classroom.
+          A closer look at my education, goals, skills, and the things I love doing outside the
+          classroom.
         </p>
       </div>
     </section>
@@ -87,10 +87,9 @@ function About() {
             <h2 className="text-2xl font-bold">Educational Background</h2>
           </div>
           <p className="mt-4 max-w-3xl text-muted-foreground">
-            I am currently studying for a Bachelor of Science (B.Sc.) degree in
-            Computer Science at MIVA Open University. My academic journey focuses
-            on programming, database systems, web technologies, and software
-            development.
+            I am currently studying for a Bachelor of Science (B.Sc.) degree in Computer Science at
+            MIVA Open University. My academic journey focuses on programming, database systems, web
+            technologies, and software development.
           </p>
           <div className="mt-6 overflow-x-auto rounded-2xl border border-border shadow-soft">
             <table className="w-full min-w-[520px] text-left text-sm">
@@ -139,10 +138,9 @@ function About() {
             <h2 className="text-2xl font-bold">Career Aspirations</h2>
           </div>
           <p className="mt-4 max-w-3xl text-muted-foreground">
-            My goal is to become a successful software engineer and technology
-            professional who develops innovative digital solutions. I aim to
-            improve my expertise in full-stack web development, mobile
-            applications, artificial intelligence, and other emerging
+            My goal is to become a successful software engineer and technology professional who
+            develops innovative digital solutions. I aim to improve my expertise in full-stack web
+            development, mobile applications, artificial intelligence, and other emerging
             technologies.
           </p>
         </section>

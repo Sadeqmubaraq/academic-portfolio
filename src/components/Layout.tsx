@@ -75,18 +75,19 @@ export function Layout({ children }: { children: ReactNode }) {
           <div>
             <h3 className="font-display text-lg font-bold">Mubaraq Sadeq</h3>
             <p className="mt-2 text-sm text-primary-foreground/70">
-              B.Sc. Computer Science student at MIVA Open University, passionate
-              about web development and digital innovation.
+              B.Sc. Computer Science student at MIVA Open University, passionate about web
+              development and digital innovation.
             </p>
           </div>
           <div>
-            <h4 className="text-sm font-semibold uppercase tracking-wider text-accent">
-              Navigate
-            </h4>
+            <h4 className="text-sm font-semibold uppercase tracking-wider text-accent">Navigate</h4>
             <ul className="mt-3 space-y-2 text-sm">
               {navItems.map((item) => (
                 <li key={item.to}>
-                  <Link to={item.to} className="text-primary-foreground/70 transition-colors hover:text-accent">
+                  <Link
+                    to={item.to}
+                    className="text-primary-foreground/70 transition-colors hover:text-accent"
+                  >
                     {item.label}
                   </Link>
                 </li>
@@ -94,14 +95,20 @@ export function Layout({ children }: { children: ReactNode }) {
             </ul>
           </div>
           <div>
-            <h4 className="text-sm font-semibold uppercase tracking-wider text-accent">
-              Connect
-            </h4>
+            <h4 className="text-sm font-semibold uppercase tracking-wider text-accent">Connect</h4>
             <div className="mt-3 flex flex-col gap-2 text-sm">
-              <a href="mailto:sadeqmubaraqowolabi@gmail.com" className="flex items-center gap-2 text-primary-foreground/70 transition-colors hover:text-accent">
+              <a
+                href="mailto:sadeqmubaraqowolabi@gmail.com"
+                className="flex items-center gap-2 text-primary-foreground/70 transition-colors hover:text-accent"
+              >
                 <Mail className="h-4 w-4" /> sadeqmubaraqowolabi@gmail.com
               </a>
-              <a href="https://github.com/Sadeqmubaraq" target="_blank" rel="noreferrer" className="flex items-center gap-2 text-primary-foreground/70 transition-colors hover:text-accent">
+              <a
+                href="https://github.com/Sadeqmubaraq"
+                target="_blank"
+                rel="noreferrer"
+                className="flex items-center gap-2 text-primary-foreground/70 transition-colors hover:text-accent"
+              >
                 <Github className="h-4 w-4" /> github.com/Sadeqmubaraq
               </a>
             </div>

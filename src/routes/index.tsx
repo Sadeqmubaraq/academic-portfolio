@@ -19,9 +19,24 @@ export const Route = createFileRoute("/")({
 });
 
 const highlights = [
-  { icon: BookOpen, title: "About Me", text: "Education, aspirations & skills", to: "/about" as const },
-  { icon: FolderKanban, title: "Projects", text: "Selected work & case studies", to: "/projects" as const },
-  { icon: ListChecks, title: "Academic Planner", text: "Plan & track your tasks", to: "/planner" as const },
+  {
+    icon: BookOpen,
+    title: "About Me",
+    text: "Education, aspirations & skills",
+    to: "/about" as const,
+  },
+  {
+    icon: FolderKanban,
+    title: "Projects",
+    text: "Selected work & case studies",
+    to: "/projects" as const,
+  },
+  {
+    icon: ListChecks,
+    title: "Academic Planner",
+    text: "Plan & track your tasks",
+    to: "/planner" as const,
+  },
   { icon: Code2, title: "Contact", text: "Let's get in touch", to: "/contact" as const },
 ];
 
@@ -47,9 +62,8 @@ function Index() {
               Hello, I'm <span className="text-gradient-accent">Mubaraq Sadeq</span>
             </h1>
             <p className="mt-5 max-w-lg text-base leading-relaxed text-primary-foreground/80 sm:text-lg">
-              Welcome to my academic portfolio. I'm a passionate Computer Science
-              student showcasing my educational journey, skills, projects, and
-              academic activities — all in one place.
+              Welcome to my academic portfolio. I'm a passionate Computer Science student showcasing
+              my educational journey, skills, projects, and academic activities — all in one place.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <Link
@@ -86,12 +100,11 @@ function Index() {
       <section className="mx-auto max-w-4xl px-4 py-16 sm:px-6 text-center">
         <h2 className="text-2xl font-bold sm:text-3xl">A little about me</h2>
         <p className="mx-auto mt-5 max-w-3xl text-base leading-relaxed text-muted-foreground">
-          I am an aspiring software developer and technology enthusiast with a
-          strong interest in web development, software engineering, and digital
-          innovation. As a 100-level Computer Science student, I am continuously
-          developing my skills in programming, problem-solving, and modern
-          technologies. I enjoy creating websites, exploring new technologies,
-          and building solutions that can positively impact society.
+          I am an aspiring software developer and technology enthusiast with a strong interest in
+          web development, software engineering, and digital innovation. As a 100-level Computer
+          Science student, I am continuously developing my skills in programming, problem-solving,
+          and modern technologies. I enjoy creating websites, exploring new technologies, and
+          building solutions that can positively impact society.
         </p>
       </section>
 
@@ -110,7 +123,8 @@ function Index() {
               <h3 className="mt-4 font-display text-lg font-semibold">{title}</h3>
               <p className="mt-1 text-sm text-muted-foreground">{text}</p>
               <span className="mt-4 inline-flex items-center gap-1 text-sm font-medium text-accent">
-                Explore <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+                Explore{" "}
+                <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
               </span>
             </Link>
           ))}
